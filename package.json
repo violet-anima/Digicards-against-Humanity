@@ -11,7 +11,7 @@
   "engines": {
     "node": "6.3.x"
   },
-  "author": "Nelson LaQuet",
+  "author": "Melanie Oh and Nathan Armstrong",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.17.0",
