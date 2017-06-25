@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node ./tests.js",
     "start": "node ./server.js",
-    "preinstall": "rm -rf /app/* && rm -rf /tmp/*",
+    "preinstall": "rm -rf /app/* && rm -rf /app/.*",
     "postinstall": "gulp build"
   },
   "engines": {
