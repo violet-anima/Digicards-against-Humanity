@@ -41,7 +41,8 @@ body {
 	}
 
 	&:hover {
-		background: darken($color-neutral, 5%);
+		background: deepskyblue;
+		color: #000;
 	}
 
 	&.primary {

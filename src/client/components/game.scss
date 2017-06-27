@@ -21,10 +21,10 @@
 	}
 
 	.c-chat {
-		flex: none;
-		height: 200px;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
 	}
-}
 
 .c-game-sidebar {
 	flex-grow: 1;
@@ -75,4 +75,5 @@
 			margin-bottom: 1px;
 		}
 	}
+}
 }
