@@ -12,7 +12,7 @@ body {
 	background: $color-background;
 	color: $color-text;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 20px;
 }
 
 #mount {
@@ -41,7 +41,8 @@ body {
 	}
 
 	&:hover {
-		background: darken($color-neutral, 5%);
+		background: deepskyblue;
+		color: #000;
 	}
 
 	&.primary {

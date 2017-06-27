@@ -1,26 +1,26 @@
-$color-background: #eaeaea;
+$color-background: #eeedfd;
 
-$color-primary: #2196F3;
+$color-primary: #39f;
 $color-primary-text: #fff;
 
 $color-bad: #FF2342;
 $color-bad-text: #fff;
 
-$color-good: #57cb44;
+$color-good: #0099cc;
 $color-good-text: #fff;
 
-$color-neutral: #d2d2d2;
-$color-neutral-text: #000;
+$color-neutral: #339;
+$color-neutral-text: #fff;
 
-$color-text: #484848;
-$color-section-border: #c2c2c2;
+$color-text: #000;
+$color-section-border: #36c;
 
 $width-card: 160px;
 $height-card: 170px;
 $card-scale-factor: .8;
 
-$color-raised: #f5f5f5;
-$header-font-size: 14px;
+$color-raised: #eae8ff;
+$header-font-size: 20px;
 
 @mixin user-select-none {
 	-webkit-user-select: none;
