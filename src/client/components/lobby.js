@@ -27,7 +27,7 @@ class LobbyContainer extends ContainerBase {
 		return (
 			<div className="c-lobby">
 				<GameList games={games} joinGame={this._joinGame} />
-				<Chat 
+				<Chat
 					messages={messages}
 					opSendMessage={opSendMessage}
 					sendMessage={this._sendMessage} />
@@ -56,7 +56,7 @@ class LobbySidebar extends ContainerBase {
 		return (
 			<section className="c-lobby-sidebar">
 				<div className="m-sidebar-buttons">
-					{!opLogin.can ? null : 
+					{!opLogin.can ? null :
 						<button className="m-button primary" onClick={this._login}>Login</button>}
 
 					{!opCreateGame.can ? null :
@@ -75,10 +75,10 @@ class LobbySidebar extends ContainerBase {
 function GameList({games, joinGame}) {
 	return (
 		<section className="c-game-list">
-			{games.length > 0 ? null : 
-				<div className="no-games">There are no games yet :(</div>}
+			{games.length > 0 ? null :
+				<div className="no-games centered">Welcome to Digicards Against Humanity</div>}
 
-			{games.map(game => 
+			{games.map(game =>
 				<div className="game" key={game.id} onClick={() => joinGame(game)}>
 					<div className="title">{game.title}</div>
 					<div className="players">
