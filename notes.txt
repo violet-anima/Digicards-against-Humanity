@@ -1,0 +1,22 @@
+change the "*" route to a root route "/"
+
+app.get("/games/:id", (req, res) => {
+  // load the game from the database as const game
+  // get the json representation of game as const json
+  res.send(json)
+});
+
+
+
+create end points for each 'action' you want to do
+
+create user
+authenticate user
+destroy user session
+edit user
+delete user
+get user
+
+get game
+update game
+delete game
