@@ -12,7 +12,7 @@ class AppContainer extends ContainerBase {
 		this.subscribe(app.dialogs$, dialogs => this.setState({dialogs}));
 
 		this.subscribe(
-			dispatcher.onSuccess$(A.GAME_JOIN), 
+			dispatcher.onSuccess$(A.GAME_JOIN),
 			action => {
 				const path = `/game/${action.gameId}`;
 				if (router.location.pathname == path)

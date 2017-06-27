@@ -36,7 +36,7 @@ function main() {
 			<Router history={history}>
 				{routes}
 			</Router>
-		</StoreProvider>, 
+		</StoreProvider>,
 		document.getElementById("mount"));
 }
 
