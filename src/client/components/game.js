@@ -16,7 +16,7 @@ class GameContainer extends ContainerBase {
 
 		this._videoCollapse = () => document.querySelector('.c-frame.collapsible').classList.toggle('collapsed');
 
-		this._sendMessage = message => 
+		this._sendMessage = message =>
 			this.request(A.gameSendMessage(this.state.game.id, message));
 	}
 
@@ -33,10 +33,8 @@ class GameContainer extends ContainerBase {
 		this.request(A.gameJoin(gameId));
 	}
 
-	
-
 	render() {
-		
+
 
 		const {opJoinGame, game} = this.state;
 		let body = null;
@@ -53,7 +51,7 @@ class GameContainer extends ContainerBase {
 			body = <GameBoard />;
 		}
 
-		
+
 
 
 		return (
@@ -73,7 +71,7 @@ class GameContainer extends ContainerBase {
 class GameSidebar extends ContainerBase {
 	constructor(props) {
 		super(props);
-		this._sendMessage = message => 
+		this._sendMessage = message =>
 			this.request(A.gameSendMessage(this.state.game.id, message));
 		this._exitGame = () => this.props.router.push("/");
 		this._login = () => this.dispatch(A.dialogSet(A.DIALOG_LOGIN, true));
