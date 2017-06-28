@@ -1,7 +1,25 @@
 @import "../variables";
 
-.centered {
-	text-align: center;
+.c-banner{
+	display: flex;
+	background-color: $color-primary;
+	padding-bottom: 5px;
+	margin: 0px;
+	margin-bottom: 5px;;
+	justify-content: center;
+	flex-direction: column;
+	// border: 2px solid $color-section-border;
+	border-radius: 3px;
+
+	.banner{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		color: white;
+		font-size: 35px;
+	}
 }
 
 .c-game-list {

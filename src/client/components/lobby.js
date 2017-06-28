@@ -26,11 +26,14 @@ class LobbyContainer extends ContainerBase {
 
 		return (
 			<div className="c-lobby">
-				<GameList games={games} joinGame={this._joinGame} />
-				<Chat
-					messages={messages}
-					opSendMessage={opSendMessage}
-					sendMessage={this._sendMessage} />
+				<div className="c-banner" >
+					<h1 className="banner">Digicards Against Humanity</h1>
+				</div>
+					<GameList games={games} joinGame={this._joinGame} />
+					<Chat
+						messages={messages}
+						opSendMessage={opSendMessage}
+						sendMessage={this._sendMessage} />
 			</div>
 		);
 	}
@@ -76,7 +79,7 @@ function GameList({games, joinGame}) {
 	return (
 		<section className="c-game-list">
 			{games.length > 0 ? null :
-				<div className="no-games centered">Welcome to Digicards Against Humanity</div>}
+				<div className="no-games centered">There are no games yet :(</div>}
 
 			{games.map(game =>
 				<div className="game" key={game.id} onClick={() => joinGame(game)}>
