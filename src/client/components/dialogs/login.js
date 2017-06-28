@@ -39,7 +39,7 @@ class LoginDialog extends ContainerBase {
 
 		return (
 			<section className="c-login-dialog">
-				<h1>Login</h1>
+				<h1 className="login">Login</h1>
 				<form onSubmit={this._login} disabled={disabled}>
 					<div className="form-row">
 						<TextInput

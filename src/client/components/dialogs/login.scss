@@ -3,6 +3,10 @@
 .c-login-dialog {
 	min-width: 250px;
 
+	.login {
+		color: #339;
+	}
+
 	.error {
 		margin: 5px 0;
 		color: $color-bad;

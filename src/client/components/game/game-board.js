@@ -1,7 +1,6 @@
 import "./game-board.scss";
 
 import React from "react";
-import _ from "lodash";
 import * as A from "../../actions";
 import {ContainerBase} from "../../lib/component";
 
@@ -58,14 +57,14 @@ export default class GameBoard extends ContainerBase {
 			case A.STEP_CHOOSE_WHITES:
 				messageIsActive = opSelectCard.can;
 				message = opSelectCard.can
-					? "choose your cards!"
+					? "double-click to choose your cards!"
 					: "waiting for other players...";
 				break;
 
 			case A.STEP_JUDGE_STACKS:
 				messageIsActive = opSelectStack.can;
 				message = opSelectStack.can
-					? "select the winning cards!"
+					? "double-click to select the winning cards!"
 					: "waiting for the czar...";
 				break;
 
@@ -76,7 +75,7 @@ export default class GameBoard extends ContainerBase {
 
 		const ourStackId = game.step == A.STEP_CHOOSE_WHITES
 			&& player && player.stack && player.stack.id;
-		
+
 		const stacks = ourStackId
 			? round.stacks.map(s => s.id == ourStackId ? player.stack : s)
 			: round.stacks;
@@ -89,12 +88,12 @@ export default class GameBoard extends ContainerBase {
 						{message}
 					</div>
 				</div>
-				<Stacks 
+				<Stacks
 					stacks={stacks}
 					ourStackId={ourStackId}
 					opSelectStack={opSelectStack}
 					selectStack={this._selectStack} />
-				<PlayerHand 
+				<PlayerHand
 					opSelectCard={opSelectCard}
 					selectCard={this._selectCard}
 					hand={player.hand}

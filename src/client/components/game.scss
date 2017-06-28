@@ -22,9 +22,33 @@
 
 	.c-chat {
 		flex-grow: 1;
-		display: flex;
+		display: flex;	
 		flex-direction: column;
 	}
+	
+	.c-frame {
+		overflow: hidden;
+		transition: flex 0.3s ease-out;
+		overflow-y: scroll;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		border: 2px solid #36c;
+		border-radius: 3px;
+		max-height: 200px;
+		flex: 1;
+
+			.frame {
+			width:5%;
+			flex-grow: 1;
+			display: flex;
+		}
+	}
+	.c-frame.collapsed{
+		flex: 0;
+		height: 0px;
+	}
+}
 
 .c-game-sidebar {
 	flex-grow: 1;
@@ -75,5 +99,4 @@
 			margin-bottom: 1px;
 		}
 	}
-}
 }

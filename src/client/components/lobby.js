@@ -79,7 +79,7 @@ function GameList({games, joinGame}) {
 	return (
 		<section className="c-game-list">
 			{games.length > 0 ? null :
-				<div className="no-games centered">There are no games yet :(</div>}
+				<div className="no-games">There are no games yet :(</div>}
 
 			{games.map(game =>
 				<div className="game" key={game.id} onClick={() => joinGame(game)}>

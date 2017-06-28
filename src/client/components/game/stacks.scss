@@ -2,15 +2,16 @@
 
 .c-stacks {
 	margin-bottom: 20px;
-	margin-left: -5px;
+	margin-left: 5px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	min-height: 0;
+	min-height: 128px;
 	overflow-y: auto;
 
 	> .stack {
 		margin: 5px;
+		height: 138px;
 		padding: 5px;
 		border-radius: 5px;
 		background: darken($color-background, 5%);

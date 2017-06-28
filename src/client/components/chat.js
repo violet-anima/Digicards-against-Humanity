@@ -1,6 +1,7 @@
 import "./chat.scss";
 import React, {Component, PropTypes} from "react";
 import {TextInput} from "./controls";
+// import Capture from "./capture";
 
 export default class Chat extends Component {
 	static propTypes = {
@@ -54,6 +55,7 @@ export default class Chat extends Component {
 							<span className="message">{message.message}</span>
 						</li>)}
 				</ul>
+
 				<form onSubmit={this._sendMessage}>
 					<TextInput 
 						className="top-border"

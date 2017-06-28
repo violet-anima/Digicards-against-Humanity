@@ -8,7 +8,6 @@
 	margin-bottom: 5px;;
 	justify-content: center;
 	flex-direction: column;
-	// border: 2px solid $color-section-border;
 	border-radius: 3px;
 
 	.banner{
@@ -51,7 +50,7 @@
 			font-weight: bold;
 			margin-bottom: 5px;
 			font-size: $header-font-size;
-			background: #eee;
+			background: $color-raised;
 			padding: 10px;
 		}
 
@@ -69,7 +68,7 @@
 		}
 
 		&:hover {
-			background: #fff;
+			background: $color-primary-text;
 			box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 		}
 	}

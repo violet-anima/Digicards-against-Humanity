@@ -10,13 +10,13 @@
 	position: relative;
 
 	&.black .inner {
-		background: #000;
-		color: #fff;
+		background: #000099;
+		color: #ccc;
 	}
 
 	&.white .inner {
-		background: #fff;
-		color: #000;
+		background: #ccc;
+		color: #000099;
 	}
 
 	.inner {
