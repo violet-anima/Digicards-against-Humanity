@@ -64,7 +64,7 @@ export default class GameBoard extends ContainerBase {
 			case A.STEP_JUDGE_STACKS:
 				messageIsActive = opSelectStack.can;
 				message = opSelectStack.can
-					? "double-click to pick the winning cards!"
+					? "You're the czar. Pick the winning cards!"
 					: "waiting for the czar...";
 				break;
 

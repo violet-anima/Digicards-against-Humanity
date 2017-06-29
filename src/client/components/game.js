@@ -101,6 +101,14 @@ class GameSidebar extends ContainerBase {
 
 		return (
 			<section className="c-game-sidebar">
+				<div style={{
+					margin: 2,
+					fontSize: 20,
+					background: '#b709ff',
+					color: 'white',
+					borderRadius: 3,
+					padding: 5
+				}}>Digicards Against Humanity</div>
 				<div className="m-sidebar-buttons">
 					{!opLogin.can ? null :
 						<button className="m-button primary" onClick={this._login}>
