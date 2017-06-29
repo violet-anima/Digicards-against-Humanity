@@ -104,9 +104,10 @@ class GameSidebar extends ContainerBase {
 				<div style={{
 					margin: 2,
 					fontSize: 20,
-					background: '#b709ff',
+					background: '#0099cc',
 					color: 'white',
 					borderRadius: 3,
+					textAlign: 'center',
 					padding: 5
 				}}>Digicards Against Humanity</div>
 				<div className="m-sidebar-buttons">

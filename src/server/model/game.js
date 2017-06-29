@@ -43,7 +43,7 @@ export class Game extends RoomBase {
 		this.messages = [];
 		this.round = null;
 		this.options = {
-			scoreLimit: 5,
+			scoreLimit: 4,
 			sets: app.cards.sets.map(s => s.id)
 		};
 

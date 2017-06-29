@@ -80,12 +80,40 @@ export default class GameBoard extends ContainerBase {
 			? round.stacks.map(s => s.id == ourStackId ? player.stack : s)
 			: round.stacks;
 
+
+		const isGameOver = timer.type== A.WAIT_GAME_OVER && timer.reason == A.WAIT_REASON_GAME_FINISHED;
+		const winnerName = isGameOver ?
+			game.players.filter(player => player.isWinner)[0].name :
+			'';
+		const endMessage = isGameOver?
+			<div style={{
+				zIndex: 1000,
+				background: '#4da6ff',
+				position: 'fixed',
+				top: '20vh',
+				bottom: '20vh',
+				left: '20vw',
+				right: '20vw',
+				color: 'white',
+				padding: 10,
+				textAlign: 'center',
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				fontSize: 40,
+				borderRadius: 12
+			}}>
+					!! The winner is {winnerName} !! <br /> Game Over.  Thank You for Playing :)
+			</div>
+			: null;
+
 		return (
 			<section className="c-game-board">
 				<div className="black-card">
 					<Card type="black" card={round.blackCard} />
 					<div className={`game-status ${messageIsActive ? "is-active" : ""}`}>
 						{message}
+						{endMessage}
 					</div>
 				</div>
 				<Stacks
