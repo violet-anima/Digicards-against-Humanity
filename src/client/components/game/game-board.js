@@ -103,7 +103,7 @@ export default class GameBoard extends ContainerBase {
 				fontSize: 40,
 				borderRadius: 12
 			}}>
-					!! The winner is {winnerName} !! <br /> Game Over.  Thank You for Playing :)
+					!! The winner is {winnerName} !! <br /> Game Over :)
 			</div>
 			: null;
 
