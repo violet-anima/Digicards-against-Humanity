@@ -53,15 +53,12 @@ class GameContainer extends ContainerBase {
 			body = <GameBoard />;
 		}
 
-
-
-
 		return (
 			<div className="c-game">
 					{body}
 					<button classID="toggle-button" onClick={this._videoCollapse} >Toggle Video</button>
 					<div className="c-frame collapsible">
-							<iframe className="frame" src="https://appear.in/ifta5" width="401" height="320" frameborder="0"></iframe>
+							<iframe className="frame" src="https://appear.in/digicards" width="401" height="320" frameborder="0"></iframe>
 					</div>
 					<script src="//developer.appear.in/scripts/appearin-sdk.0.0.4.min.js"></script>
 
